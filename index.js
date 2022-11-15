@@ -1,7 +1,7 @@
 $(document).ready(function () {
             renderCurrentTime();
             renderQuote();
-            renderRandomImage();
+            // renderRandomImage();
         });
 
 
@@ -28,13 +28,13 @@ function renderQuote() {
 
 
 //배경화면 랜덤화
-function renderRandomImage() {
-    let imageList = [];
-    for (i = 0; i < 9; i++) {
-      imageList.push(i);
-    }
-    let imageListLength = imageList.length;
-    let randomImage = Math.floor(Math.random() * (imageListLength))+1
-    randomImage = `backgroundImages/${randomImage}.jpg`
-    $(document.body).css("background-image", `url(${randomImage})`);
-  }
+// function renderRandomImage() {
+//     let imageList = [];
+//     for (i = 0; i < 9; i++) {
+//       imageList.push(i);
+//     }
+//     let imageListLength = imageList.length;
+//     let randomImage = Math.floor(Math.random() * (imageListLength))+1
+//     randomImage = `backgroundImages/${randomImage}.jpg`
+//     $(document.body).css("background-image", `url(${randomImage})`);
+//   }
