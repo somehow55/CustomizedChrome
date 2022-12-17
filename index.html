@@ -23,7 +23,8 @@
         
         body {
             /* background-image: url("https://i.pinimg.com/originals/e2/64/2d/e2642de55732db8c8628b3519a63cda0.png"); */
-            background-image: url("https://images.unsplash.com/photo-1491234323906-4f056ca415bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3174&q=80");
+            background-image: url("backgroundImages/9.jpg");
+            /* background-image : url("https://images.unsplash.com/photo-1491234323906-4f056ca415bc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3174&q=80"); */
             
             /* 이미지 가운데 정렬 */
             background-position: center;
@@ -52,11 +53,23 @@
 
         .main{
             width: 100vw;       /* 화면 가로 꽉차게 쓰기. 100% */
-            height: 80vh;       /* 화면 세로의 80%만 쓰기. */
+            height: 60vh;       /* 화면 세로의 60%만 쓰기. */
 
             /* 화면 위아래 모두 가운데 정렬 코드 세트 */
             display: flex;
             flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .shortcuticons{
+            width: 100vw;
+            height: 20vh;
+
+            /* 화면 위아래 모두 가운데 정렬 코드 세트 */
+            display: flex;
+            /* flex-direction: column; */
             align-items: center;
             justify-content: center;
         }
@@ -69,6 +82,21 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
+        }
+
+        .shortcuticons > div {
+            margin: 10px;
+        }
+
+
+        .shortcuticons > div > a > img{
+            width: 60px;
+            border-radius: 30%;
+
+            /* display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; */
         }
 
     </style>
@@ -90,6 +118,28 @@
               <div class="input-group-append"></div>
             </div>
         </form>
+    </div>
+    <div class="shortcuticons">
+        <div class="icloud">
+            <a href="https://www.icloud.com" alt="icloud">
+                <img src="shortcuticon/icloud.png">
+            </a>
+        </div>
+        <div class="sparta">
+            <a href="https://online.spartacodingclub.kr/login?next=%2Fclassroom" alt="sparta">
+                <img src="shortcuticon/spartacoding.png">
+            </a>
+        </div>
+        <div class="class101">
+            <a href="https://class101.net/plus/ko" alt="class101">
+                <img src="shortcuticon/class101.png">
+            </a>
+        </div>
+        <div class="github">
+            <a href="https://github.com/somehow55?tab=repositories" alt="github">
+                <img src="shortcuticon/github.png">
+            </a>
+        </div>
     </div>
     <div class="quote">
         <div id="author" class="author">-- Life Quotes --</div>
